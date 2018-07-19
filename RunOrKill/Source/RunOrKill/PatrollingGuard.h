@@ -7,14 +7,20 @@
 #include "PatrollingGuard.generated.h"
 
 /**
- * 
+ *
  */
 UCLASS()
 class RUNORKILL_API APatrollingGuard : public ATP_ThirdPersonCharacter
 {
 	GENERATED_BODY()
 
-		UPROPERTY(EditInstanceOnly, Category = "Patrol Points")
+public:
+
+	TArray<AActor*> GetPatrolPoints();
+
+
+private:
+	UPROPERTY(EditInstanceOnly, Category = "Patrol Points")
 		TArray<AActor*> PatrolPoints;
-	
+
 };
