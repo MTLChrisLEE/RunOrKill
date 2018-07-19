@@ -10,9 +10,7 @@ EBTNodeResult::Type UChooseNextWaypoint::ExecuteTask(UBehaviorTreeComponent & Ow
 	auto Blackboardcomponent = OwnerComp.GetBlackboardComponent();
 	auto index = Blackboardcomponent->GetValueAsInt(IndexKey.SelectedKeyName);
 	auto Name = OwnerComp.GetOwner()->GetName();
-
-
-
+	
 	UE_LOG(LogTemp, Warning, TEXT("%s is on way to its patrolpoint index: %i"), *Name, index);
 
 	return EBTNodeResult::Succeeded;
