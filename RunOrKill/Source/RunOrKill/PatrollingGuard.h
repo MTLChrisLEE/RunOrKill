@@ -14,10 +14,6 @@ class RUNORKILL_API APatrollingGuard : public ATP_ThirdPersonCharacter
 {
 	GENERATED_BODY()
 
-public:
-
-	TArray<AActor*> GetPatrolPoints();
-
 
 private:
 	UPROPERTY(EditInstanceOnly, Category = "Patrol Points")
