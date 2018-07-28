@@ -43,11 +43,12 @@ protected:
 	virtual void BeginPlay() override;
 
 	/** Fires a projectile. */
-	void OnFire();
 
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
+	
+	void OnFire();
 
 	
 	
