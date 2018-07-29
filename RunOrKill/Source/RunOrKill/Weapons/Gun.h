@@ -48,7 +48,8 @@ public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 	
-	void OnFire();
+	UFUNCTION(BlueprintCallable, Category="Input")
+		void OnFire();
 
 	
 	
